@@ -1,0 +1,34 @@
+//-- MEDIA QUERY
+@mixin width-1300 {
+    @media screen and (max-width: 1300px) { @content } ;
+}
+@mixin width-1130 {
+    @media screen and (max-width: 1130px) { @content } ;
+}
+@mixin width-1050 {
+    @media screen and (max-width: 1050px) { @content } ;
+}
+@mixin width-865 {
+    @media screen and (max-width: 865px) { @content } ;
+}
+@mixin width-850 {
+    @media screen and (max-width: 850px) { @content } ;
+}
+@mixin width-780 {
+    @media screen and (max-width: 780px) { @content } ;
+}
+@mixin width-735 {
+    @media screen and (max-width: 735px) { @content } ;
+}
+@mixin width-500 {
+    @media screen and (max-width: 500px) { @content } ;
+}
+@mixin width-410 {
+    @media screen and (max-width: 410px) { @content } ;
+}
+@mixin width-376 {
+    @media screen and (max-width: 376px) { @content } ;
+}
+@mixin width-355 {
+    @media screen and (max-width: 355px) { @content } ;
+}

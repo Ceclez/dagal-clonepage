@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 1.0">
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--FUENTES-->
+    <script src="js/main.js" defer></script>
+    <!-- // TITILLIUM WEB ↓↓-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nanum+Gothic:wght@400;700;800&family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Dagal</title>
+</head>
+<body>
+    <div class="container">
+        <!--MODAL/AVISO DE MUESTRA AL ENTRAR EN EL SITIO ↓↓-->
+        <section id="modal" class="section-modal">
+            <div class="section-modal__modal">
+                <div class="modal__title-n-closeicon">
+                    <h3 class="title-n-closeicon__title">Grupo Dagal te Invita</h3>
+                    <img src="logos/close.svg" id="close-modal" class="title-n-closeicon__icon" alt="ícono para cerrar el modal/aviso para registro de tarjeta de cliente distinguido">
+                </div>
+                <a href="#" class="modal__anchor-image">
+                    <img src="img/dagal-aviso.jpg" class="anchor-image__card-image" alt="imagen ilustrativa de la tarjeta Dagal de cliente distinguido">
+                </a>
+            </div>
+        </section>
+        <!--SECCIÓN DEL ENCABEZADO DEL SITIO-->
+        <header>
+            <section id="logos-n-login" class="logos-n-login">
+                <img src="img/dagal-logo.png" alt="Dagal logo" class="logos-n-login__image">
+
+                <form action="#" id="form-login" class="logos-n-login__form">
+                
+                    <!--ÍCONO DE CERRAR (MOSTRAR EN PANTALLAS PEQUEÑAS) ↓↓-->
+                    <img src="logos/close.svg" id="close-form" class="logos-n-login__close-icon" alt="ícono para cerrar el formulario en pantallas pequeñas">
+                    <div class="form__user">
+                        <label for="name" class="user__label">Usuario</label>
+                        <input type="text" class="user__input">
+                    </div>
+                    <div class="form__password">
+                        <label for="password" class="password__label">Contraseña</label>
+                        <input type="password" class="password__input">
+                    </div>
+                    <button class="form__button">Iniciar</button>
+
+                    <!--LEYENDA DE CONTRASEÑA OLVIDADA (MOSTRAR EN PANTALLAS PEQUEÑAS) ↓↓-->
+                    <div class="form__password-forgotten">
+                        <a href="#" class="password-forgotten__link">Olvidé mi contraseña</a>
+                    </div>
+                </form>
+
+                <!--BLOQUE DE INICIO DE SESIÓN (MOSTRAR EN PANTALLAS PEQUEÑAS) ↓↓-->
+                <section id="login-form" class="logos-n-login__session-section">
+                    <img src="logos/login.svg" class="session-section__login-logo" alt="logo de inicio de sesión">
+                    <button id="btn-session" class="session-section__session-btn">Iniciar Sesión</button>
+                </section>
+            </section>
+
+            <nav id="navbar" class="navbar">
+                <!--LOGO DE DAGAL MINI ↓↓ -->
+                <a href="#" class="navbar__dagal-icon">
+                    <img src="img/dagal-logo-mini.png" alt="Logotipo de Dagal" class="icon__dagal-icon">
+                </a>
+                <!--BARRA DE NAVEGACIÓN ↓↓-->
+                <ul class="navbar__list">
+                    <li class="list__element list__element--extramarginright"><a href="#" class="element__anchor">Restaurantes</a></li>
+                    <li class="list__element list__element-parent">
+                        <a href="#" class="element-parent__anchor">Distribuidoras</a>
+                        <img src="logos/down-arrow.svg" class="element-parent__down-arrow" alt="flecha que muestra disponibilidad de más elementos desplegables">
+                        <ul class="element-parent__ul-deploy">
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Productos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="list__element list__element--extramarginright"><a href="#" class="element__anchor">Autotransportes</a></li>
+                    <li class="list__element list__element-parent">
+                        <a href="#" class="element-parent__anchor">Estaciones</a>
+                        <img src="logos/down-arrow.svg" class="element-parent__down-arrow" alt="flecha que muestra disponibilidad de más elementos desplegables">
+                        <ul class="element-parent__ul-deploy">
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Ubicaciones</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="list__element list__element-parent">
+                        <a href="#" class="element-parent__anchor">Clientes</a>
+                        <img src="logos/down-arrow.svg" class="element-parent__down-arrow" alt="flecha que muestra disponibilidad de más elementos desplegables">
+                        <ul class="element-parent__ul-deploy">
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Descargas Facturas</a></li>
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Iniciar Sesión</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="list__element list__element-parent">
+                        <a href="#" class="element-parent__anchor">Facturación Electrónica</a>
+                        <img src="logos/down-arrow.svg" class="element-parent__down-arrow" alt="flecha que muestra disponibilidad de más elementos desplegables">
+                        <ul class="element-parent__ul-deploy">
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Regístrate</a></li>
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Solicitar Factura</a></li>
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Instrucciones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!--BARRA DE NAVEGACIÓN DISPONBILE SÓLO PARA MÓVILES ↓↓-->
+                <ul id="navbar-elements" class="navbar__list-mobile">
+                    <!--LOGO DE INICIO DE SESIÓN (MOSTRAR EN PANTALLAS PEQUEÑAS) ↓↓-->
+                    <li class="list-mobile__element list-mobile__element-close-icon">
+                        <img src="logos/close.svg" id="close-nav-elements" class="element-close-icon__close-icon" alt="ícono para cerrar el elementos lateral de la barra de navegación en pantallas pequeñas">
+                    </li>
+                    <li class="list-mobile__element"><a href="#" class="element__anchor-mobile">Restaurantes</a></li>
+                    <li class="list-mobile__element list-mobile__element-parent">
+                        <a href="#" class="element__anchor-mobile">Distribuidoras
+                            <img src="logos/down-arrow.svg" class="anchor__down-arrow" alt="flecha que muestra disponibilidad de más elementos desplegables">
+                        </a>
+                        <ul class="element-parent__ul-deploy-mobile">
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Productos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="list-mobile__element"><a href="#" class="element__anchor-mobile">Autotransportes</a></li>
+                    <li class="list-mobile__element list-mobile__element-parent">
+                        <a href="#" class="element__anchor-mobile">Estaciones
+                            <img src="logos/down-arrow.svg" class="anchor__down-arrow" alt="flecha que muestra disponibilidad de más elementos desplegables">
+                        </a>
+                        <ul class="element-parent__ul-deploy-mobile">
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Ubicaciones</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="list-mobile__element list-mobile__element-parent">
+                        <a href="#" class="element__anchor-mobile">Clientes
+                            <img src="logos/down-arrow.svg" class="anchor__down-arrow" alt="flecha que muestra disponibilidad de más elementos desplegables">
+                        </a>
+                        <ul class="element-parent__ul-deploy-mobile">
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Descargas Facturas</a></li>
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Iniciar Sesión</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="list-mobile__element list-mobile__element-parent">
+                        <a href="#" class="element__anchor-mobile">Facturación Electrónica
+                            <img src="logos/down-arrow.svg" class="anchor__down-arrow" alt="flecha que muestra disponibilidad de más elementos desplegables">
+                        </a>
+                        <ul class="element-parent__ul-deploy-mobile">
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Regístrate</a></li>
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Solicitar Factura</a></li>
+                            <li class="ul-deploy__element"><a href="#" class="element__anchor element__anchor-child">Instrucciones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--BURGER MENU (MOSTRAR EN PANTALLAS PEQUEÑAS) ↓↓-->
+                <img src="logos/burger-menu.svg" id="nav-burger-menu" class="navbar__burger-menu" alt="menú hamburguesa a mostrar en pantallas de dimensiones pequeñas">
+            </nav>
+        </header>
+        <!--SECCIÓN DEL CONTENIDO PRINCIPAL DEL SITIO-->
+        <main>
+            <section class="iframe-n-extra">
+                <!--VIDEO DE DAGAL EN YOUTUBE ↓↓-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Kk4naMapFgY" title="Somos de aquí" frameborder="0" class="iframe-n-extra__iframe" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <!--OPCIONES EXTRA, CONTENIDO A INFORMACIÓN ADICIONAL ↓↓-->
+                <section class="iframe-n-extra__extra"> 
+                    <article class="extra__option">
+                        <img src="logos/truck.svg" alt="logo ilustrativo de camión de carga" class="option__image">
+                        <section class="option__texts">
+                            <h3 class="option__title">Distribuidora</h3>
+                            <a href="tel:+018002330403" class="option__tel">01-800-233-0403</a>
+                            <p class="option__description">Atención inmediata de pedidos...</p>
+                            <a href="#" class="option__more">Ver más...</a>
+                        </section>
+                    </article>
+
+                    <article class="extra__option">
+                        <img src="logos/phone-recharge.svg" alt="logo ilustrativo de un teléfono" class="option__image">
+                        <section class="option__texts">
+                            <h3 class="option__title">Recarga tu móvil</h3>
+                            <p class="option__description">Recargas telefónicas en todas las estaciones Dagal...</p>
+                            <a href="#" class="option__more">Ver más...</a>
+                        </section>
+                    </article>
+
+                    <article class="extra__option">
+                        <img src="logos/receipt.svg" alt="logo ilustrativo de una factura" class="option__image">
+                        <section class="option__texts">
+                            <h3 class="option__title">Facturación Electrónica</h3>
+                            <p class="option__description">Solicita tus facturas en línea y descárgalas de tu correo electrónico...</p>
+                            <a href="#" class="option__more">Ver más...</a>
+                        </section>
+                    </article>
+
+                    <article class="extra__option">
+                        <img src="logos/gas-station.svg" alt="logo ilustrativo de una estación de combustible" class="option__image">
+                        <section class="option__texts">
+                            <h3 class="option__title">Más de 80 años contigo</h3>
+                            <p class="option__description">En los años 30 nace Dagal con una gasolinera y un taller mecánico ubicados en...</p>
+                            <a href="#" class="option__more">Ver más...</a>
+                        </section>
+                    </article>
+                </section>
+            </section>
+
+            <aside class="aside__iframe-aside">
+                <!--MUESTRA LA PÁGINA DE FACEBOOK ↓↓-->
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrupodagal%3Fref%3Dembed_page&tabs=timeline&width=345&height=816&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="345" height="816" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>   
+                <!--SEGUNDO IFRAME A MOSTRAR EN PANTALLAS DE DIMENSIONES INFERIORES  ↓↓-->
+                <iframe class="iframe-aside__facebook-snd-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrupodagal%3Fref%3Dembed_page&tabs=timeline&width=270&height=820&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="270" height="820" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </aside>
+        </main>
+        <!--SECCIÓN DEL FOOTER DEL SITIO-->
+        <footer>
+            <section class="footer__links">
+                <section class="links__f-links">
+                    <h4 class="f-links__title">Dagal en Redes Sociales</h4>
+                    <ul class="f-links__list-links">
+                        <li>
+                            <img src="img/youtube-logo.png" class="list-links__image" alt="logotipo de youtube">
+                            <a href="https://www.youtube.com/videosdagal" class="list-links__link">YouTube</a>
+                        </li>
+                        <li>
+                            <img src="img/facebook-logo.png" class="list-links__icon" alt="logotipo de facebook">
+                            <a href="https://www.facebook.com/grupodagal?ref=embed_page" class="list-links__link">Facebook</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="links__f-links">
+                    <h4 class="f-links__title">Gasolineras Dagal</h4>
+                    <ul class="f-links__list-links">
+                        <li><a href="#" class="list-links__link">Estaciones</a></li>
+                        <li><a href="#" class="list-links__link">Ubicaciones</a></li>
+                        <li><a href="#" class="list-links__link">Precios y Tipo de Cambio</a></li>
+                    </ul>
+                </section>
+
+                <section class="links__f-links">
+                    <h4 class="f-links__title">Clientes</h4>
+                    <ul class="f-links__list-links">
+                        <li><a href="#" class="list-links__link">Descarga tus Facturas</a></li>
+                        <li><a href="#" class="list-links__link">Cliente Dagal Iniciar Sesión</a></li>
+                    </ul>
+                </section>
+
+                <section class="links__f-links">
+                    <h4 class="f-links__title">Dagal Mini-Sitios</h4>
+                    <ul class="f-links__list-links">
+                        <li><a href="#" class="list-links__link">Novedades</a></li>
+                        <li><a href="#" class="list-links__link">Código de Conducta</a></li>
+                    </ul>
+                </section>
+
+                <section class="links__f-links">
+                    <h4 class="f-links__title">Prodcutos</h4>
+                    <img src="img/products.png" class="f-links__image" alt="imagen ilustrativa de los productos ofrecidos por la empresa">
+                </section>
+            </section>
+
+            <section class="footer__info">
+                <section class="info__rights">
+                    <ul class="rights__f-list">
+                        <li class="f-list__f-element"><img src="img/dagal-logo-mini.png" class="f-element__image" alt="Logotipo de Dagal"></li>
+                        <li class="f-list__f-element">Dagal</li>
+                        <li class="f-list__f-element">Mexicali B.C</li>
+                        <li class="f-list__f-element">Derechos Reservados &copy; 2012-2025</li>
+                        <li class="f-list__f-element"><a href="#">Aviso de privacidad</a></li>
+                        <li class="f-list__f-element"><img src="img/html.png" class="f-element__image f-element__image-p-language" alt="Logotipo de HTML"></li>
+                        <li class="f-list__f-element"><img src="img/css.png" class="f-element__image f-element__image-p-language" alt="Logotipo de CSS"></li>
+                        <li class="f-list__f-element"><img src="img/jquery.png" class="f-element__image f-element__image-p-language" alt="Logotipo de jQuery"></li>
+                    </ul>
+                </section>
+                <section>
+                    <p>Optimizado para Google Chrome 26 en adelante, compatible con Explorer 9 en adelante, Firefox 20, Safari 5</p>
+                </section>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
+    <!--SECCIÓN DE CHAT-->
