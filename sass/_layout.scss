@@ -1,7 +1,7 @@
 //-- IMPORTACIÓN DE VARIABLES, MIXINS Y MEDIAQUERY ↓↓ 
 @use 'base' as * ; 
 //-- ESTILOS
-.container {
+.container { 
     //-- ESTILOS DEL AVISTO/MODAL TARJETA DE CLIENTE DAGAL
     .section-modal {
         width: 430px ;
@@ -392,6 +392,9 @@
                     transition: all 300ms linear ;
                     cursor: pointer ;
                     background: $soft-blue ;
+                    @include width-735 {
+                        background: transparent ;
+                    }
                 }
                 section {
                     display: flex ;
