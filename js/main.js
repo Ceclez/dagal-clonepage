@@ -87,4 +87,13 @@ document.addEventListener('DOMContentLoaded', function() {
     moveElementsIfNecesary()
     // ESCUCHAR CAMBIOS EN DIMENSIONES DEL SITIO ↓↓
     window.addEventListener('resize', moveElementsIfNecesary)
+    // RECARGAR EL IFRAME SI NO LO HA HECHO ↓↓
+    var fbIframe = document.querySelector('.iframe-aside__facebook-snd-iframe');
+    if (fbIframe) {
+        setTimeout(function() {
+            if (!fbIframe.contentWindow || fbIframe.contentDocument.readyState !== 'complete') {
+                fbIframe.src = fbIframe.src;
+            }
+        }, 2000);
+    }
 })

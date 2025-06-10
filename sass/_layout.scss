@@ -415,6 +415,9 @@
                             transition: all 300ms linear ;
                             text-decoration: underline ;
                             color: $blue-dagal;
+                            @include width-850 {
+                                color: $yellow-dagal ;
+                            }
                         }
                     }
                     p {
@@ -514,6 +517,9 @@
                             &:hover {
                                 transition: all 300ms linear ;
                                 color: $yellow-dagal ;
+                                @include width-850 {
+                                    color: $pure-white ;
+                                }
                             }
                         }
                     }
@@ -541,13 +547,16 @@
                         gap: 1rem ;
                     }
                     li {
-                        color: #666 ;
+                        color: $dark-gray ;
                         a {
                             color: inherit ;
                             text-decoration: underline ;
                             &:hover {
                                 transition: all 300ms linear ;
                                 color: $yellow-dagal ;
+                                @include width-850 {
+                                    color: $dark-gray ;
+                                }
                             }
                         }
                         img {
@@ -557,6 +566,9 @@
                             &:hover {
                                 transition: 300ms ease-in-out;
                                 filter: grayscale(0) contrast(1) ;
+                                @include width-850 {
+                                    filter: grayscale(1) contrast(0.3) ;
+                                }
                             }
                         }
                         .f-element__image-p-language {
@@ -565,6 +577,9 @@
                             &:hover {
                                 transition: all 300ms linear ;
                                 opacity: 1 ;
+                                @include width-850 {
+                                    opacity: 0.5 ;
+                                }
                             }
                         }
                     }
